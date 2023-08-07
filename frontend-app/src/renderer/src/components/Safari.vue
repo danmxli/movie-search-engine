@@ -7,9 +7,18 @@ export default {
   setup() {
     const counter = ref(0);
     const userInput = ref('');
+
+    function fetchData() {
+      if (userInput.value != "") {
+        counter.value++
+        console.log(userInput.value);
+      }
+    };
+
     return {
       counter,
-      userInput
+      userInput,
+      fetchData
     };
   }
 }
@@ -19,7 +28,7 @@ export default {
   <div class="container">
     <div class="search-bar">
       <input v-model="userInput" type="text" class="search-input" placeholder="Enter your query">
-      <button class="search-button" @click="counter++">&#x1F50E;&#xFE0E;</button>
+      <button class="search-button" @click="fetchData">&#x1F50E;&#xFE0E;</button>
     </div>
   </div>
   <div class="query-indicator">
