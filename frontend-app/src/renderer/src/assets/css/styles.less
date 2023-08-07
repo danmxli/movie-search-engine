@@ -4,16 +4,20 @@ body {
   font-family: Roboto, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Segoe UI', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Open Sans', sans-serif;
   color: #86a5b1;
-  background-color: #2f3241;
+  background-image: url('../background_image.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  background-color: #2a2c35;
+  ::selection {
+      color: #33225c;
+      background: #b96978;
+    }
 }
 
 * {
   padding: 0;
   margin: 0;
-  ::selection {
-      color: #33225c;
-      background: #b96978;
-    }
 }
 
 ul {
@@ -146,6 +150,11 @@ a:hover {
     box-sizing: border-box;
     padding: 12px;
     height: 100%;
+    transition: background-color 1s ease;
+  }
+
+  article:hover {
+    background-color: #3a385f;
   }
 
   span {
