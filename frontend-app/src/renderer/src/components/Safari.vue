@@ -6,8 +6,10 @@ export default {
   name: 'Safari',
   setup() {
     const counter = ref(0);
+    const userInput = ref('');
     return {
-      counter
+      counter,
+      userInput
     };
   }
 }
@@ -16,13 +18,16 @@ export default {
 <template>
   <div class="container">
     <div class="search-bar">
-      <input type="text" class="search-input" placeholder="Enter your query">
+      <input v-model="userInput" type="text" class="search-input" placeholder="Enter your query">
       <button class="search-button" @click="counter++">&#x1F50E;&#xFE0E;</button>
     </div>
   </div>
-  <div class="query-count">
+  <div class="query-indicator">
     <p>
-      <b>Number of Queries: {{ counter }}</b>
+      <b>
+        Number of Queries: {{ counter }} <br />
+        User Input: "{{ userInput }}"
+      </b>
     </p>
   </div>
 </template>

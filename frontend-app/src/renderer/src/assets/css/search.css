@@ -15,11 +15,16 @@
 .search-bar {
     display: flex;
     align-items: center;
-    max-width: 400px;
+    max-width: 600px;
     margin: 0 auto;
-    border: 5px solid #786480;
+    border: 5px solid #7c6f82;
     border-radius: 100px;
+    transition: background-color 1s ease;
     overflow: hidden;
+}
+
+.search-bar:hover {
+    background-color: #291b2f;
 }
 
 .search-input {
@@ -30,7 +35,7 @@
     flex: 1;
     padding: 15px;
     outline: none;
-    font-size: 16px;
+    font-size: 20px;
 }
 
 .search-button {
@@ -48,7 +53,7 @@
     background-color: #1f196e;
 }
 
-.query-count {
+.query-indicator {
     margin-top: 10px;
     margin-bottom: 10px;
         background-color: rgba(194, 245, 255, 0.1);
@@ -58,8 +63,9 @@
         width: 29%;
         text-align: center;
         transition: background-color 1s ease;
+        word-wrap: break-word;
 }
 
-.query-count:hover {
+.query-indicator:hover {
     background-color: #3a385f;
 }
