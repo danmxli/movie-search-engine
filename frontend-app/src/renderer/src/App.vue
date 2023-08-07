@@ -1,8 +1,10 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import Safari from './components/Safari.vue'  
+</script>
 
 <template>
   <h1 class="hero-text">Movie Search Engine</h1>
-  <p class="hero-tagline">Enter your input. Press <code>Search</code> to access the database</p>
+  <p class="hero-tagline">Enter your query. Press <code>&#x1F50E;&#xFE0E;</code> to fetch results!</p>
 
   <div class="links">
     <div class="link-item">
@@ -49,6 +51,7 @@
       </article>
     </div>
   </div>
+  <Safari />
 </template>
 
 <style lang="less">
