@@ -4,7 +4,7 @@
 }
 
 .container {
-    margin-top: 20px;
+    margin-top: 65px;
     background-color: rgba(250, 170, 170, 0.1);
     border-radius: 75px;
     box-sizing: border-box;
@@ -46,4 +46,20 @@
 
 .search-button:hover {
     background-color: #1f196e;
+}
+
+.query-count {
+    margin-top: 10px;
+    margin-bottom: 10px;
+        background-color: rgba(194, 245, 255, 0.1);
+        border-radius: 75px;
+        box-sizing: border-box;
+        padding: 12px;
+        width: 29%;
+        text-align: center;
+        transition: background-color 1s ease;
+}
+
+.query-count:hover {
+    background-color: #3a385f;
 }
