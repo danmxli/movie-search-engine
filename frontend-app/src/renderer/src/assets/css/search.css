@@ -56,16 +56,62 @@
 .query-indicator {
     margin-top: 10px;
     margin-bottom: 10px;
-        background-color: rgba(194, 245, 255, 0.1);
-        border-radius: 75px;
-        box-sizing: border-box;
-        padding: 12px;
-        width: 29%;
-        text-align: center;
-        transition: background-color 1s ease;
-        word-wrap: break-word;
+    background-color: rgba(194, 245, 255, 0.1);
+    border-radius: 75px;
+    box-sizing: border-box;
+    padding: 12px;
+    width: 29%;
+    text-align: center;
+    transition: background-color 1s ease;
+    word-wrap: break-word;
 }
 
 .query-indicator:hover {
     background-color: #3a385f;
+}
+
+.description-container {
+    background-color: #2f2f39;
+    box-sizing: border-box;
+    border-radius: 3%;
+    height: 150px;
+    word-break: break-all;
+    word-wrap: break-word;
+    padding-left: 4%;
+    padding-right: 8%;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    overflow: scroll;
+}
+
+.description-container::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+.description-container::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 4px;
+}
+
+.description-container::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
+
+.description-container::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+.description-container::-webkit-scrollbar-corner {
+    background-color: transparent;
+}
+
+.img-container {
+    padding-top: 4%;
+    box-sizing: border-box;
+}
+
+img {
+    border-radius: 12%;
+    width: 130px;
+    height: 180px;
 }
